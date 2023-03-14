@@ -2,7 +2,7 @@
 
 // Your ES6 code here
 
-
+const formatArray = (arr) => `The array has ${arr.length} items. The first item is ${arr[0]} and the last item is ${arr[arr.length - 1]}`
 
 const items = ['apple', 'banana', 'orange'];
 const message = formatArray(items);
