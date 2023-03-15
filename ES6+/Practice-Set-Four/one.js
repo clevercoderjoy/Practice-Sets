@@ -2,7 +2,7 @@
 
 // Your ES6 code here
 
-
+const getMaxElement = (arr) => arr.reduce((acc, curr) => curr > acc ? acc = curr : acc);
 
 let array = [4,78,8,3,6,0,12,34]
 console.log(getMaxElement(array)) // 78
