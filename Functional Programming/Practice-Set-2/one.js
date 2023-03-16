@@ -16,6 +16,6 @@ const people = [{
 
 // Your code here
 
+const getNames = (people) => people.map(({name}) => name);
 
-
-console.log(names); // Output: ['Raj', 'Swapnil', 'Anushka']
+console.log(getNames(people)); // Output: ['Raj', 'Swapnil', 'Anushka']
