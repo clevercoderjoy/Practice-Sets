@@ -2,6 +2,7 @@
 
 // Your ES6 function here
 
+const incrementNumbers = (numbers) => numbers.map((number) => number += 3);
 
 const numbers = [1, 2, 3, 4, 5];
 console.log(incrementNumbers(numbers));
