@@ -24,6 +24,7 @@ const cars = [{
 
 // Your code here
 
+const findToyotaCar = (cars) => cars.find(({make, year}) => ((make === "Toyota") && (year > 2010)));
 
 const toyotaCar = findToyotaCar(cars);
 console.log(toyotaCar);
