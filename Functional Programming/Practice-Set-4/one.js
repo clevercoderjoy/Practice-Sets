@@ -3,6 +3,7 @@
 const strings = ["apple", "banana", "cherry", "date", "blueberry"];
 // Your code here
 
+const totalLength = (strings) => strings.map((string) => string.length).reduce((acc, curr) => acc + curr);
 
 console.log(totalLength(strings));
 // Output: 30
