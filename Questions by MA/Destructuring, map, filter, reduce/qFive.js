@@ -94,5 +94,22 @@ const JSONData = {
 // create an Object, category name as the key and an array of book titles of that category as value
 // create an object where the key is the department name and the value is the average price of the books in that department
 
-const resOne = (JSONData) => ;
+// const resOne = (JSONData) => JSONData.store.departments.reduce((acc, {categories}) => {
+//     ({...acc, [categories.name]: categories.reduce((acc, {name, books}) => ({...acc,[name]: books.map(({title}) => title)}), {})})
+// });
+
+const resOne = (JSONData) => JSONData.store.departments.reduce(
+    (final, { categories }) => ({
+        ...final,
+        ...categories.reduce(
+            (final1, { name, books }) => ({
+                ...final1,
+                [name]: books.map(({ title }) => title),
+            }),
+            {}
+        ),
+    }),
+    {}
+);
+
 console.log(resOne(JSONData));
