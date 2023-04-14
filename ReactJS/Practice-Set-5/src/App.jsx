@@ -1,7 +1,9 @@
 import './App.css'
+import { QuesFive } from './QuesFive'
+import { QuesFour } from './QuesFour'
 import { QuesOne } from './QuesOne'
 import { QuesTwo } from './QuesTwo'
-import { fakeFetchProductsTwo, fakeFetchUsersOne } from './data'
+import { fakeFetchProductsTwo, fakeFetchUserFour, fakeFetchUsersFive, fakeFetchUsersOne } from './data'
 
 function App() {
 
@@ -11,6 +13,8 @@ function App() {
       <hr />
       <QuesOne fetchUsersOne={fakeFetchUsersOne}/>
       <QuesTwo fetchProductsTwo={fakeFetchProductsTwo} />
+      <QuesFour fetchUserFour={fakeFetchUserFour} />
+      <QuesFive fetchUsersFive={fakeFetchUsersFive} />
     </div>
   )
 }
