@@ -9,7 +9,7 @@ export const QuesFive = ({ fetchUsersFive }) => {
     const [userData, setUserData] = useState({
         users: [],
         showLoading: false,
-        showError: false,
+        showError: true,
         errorMsg: "",
     });
 
@@ -21,7 +21,11 @@ export const QuesFive = ({ fetchUsersFive }) => {
             );
             const { status, data } = response;
             if (status === 200) {
-                setUserData((userData) => ({ ...userData, users: data }));
+                setUserData((userData) => ({
+                    ...userData,
+                    users: data,
+                    showError: false,
+                }));
             }
         } catch (e) {
             setUserData((userData) => ({
@@ -33,7 +37,7 @@ export const QuesFive = ({ fetchUsersFive }) => {
         setUserData((userData) => ({ ...userData, showLoading: false }));
     };
     useEffect(() => {
-        getUsersData();
+        // getUsersData();
     }, []);
 
     return (
@@ -46,7 +50,7 @@ export const QuesFive = ({ fetchUsersFive }) => {
             <div
                 style={{
                     textAlign: "left",
-                    display: (userData.showError === false) ? "block" : "none",
+                    display: userData.showError === false ? "block" : "none",
                 }}
             >
                 <h3>User Feed</h3>
