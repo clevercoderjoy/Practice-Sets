@@ -1,0 +1,120 @@
+/* Solution 1 Starts */
+
+.oneHeading {
+    font-size: 36px;
+    color: #333333;
+}
+
+.onePara {
+    margin: 20px;
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.5;
+    font-family: serif;
+}
+
+/* Solution 1 Ends */
+
+/* Solution 2 Starts */
+
+.twoList li{
+    font-size: 18px;
+    color: #333333;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Solution 2 Ends */
+
+/* Solution 3 Starts */
+
+.threeList li{
+    font-size: 18px;
+    color: #333333;
+    font-weight: 800;
+    padding: 15px;
+    border: 1px dashed red;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Solution 3 Ends */
+
+/* Solution 4 Starts */
+
+.fourIp{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.fourBtn{
+    margin: 10px;
+    background: #333333;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* Solution 4 Ends */
+
+/* Solution 5 Starts */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    width: max-content;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.fiveImg{
+    border-radius: 5px;
+}
+
+.fiveCaptionOne{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px;
+}
+
+.fiveCaptionTwo{
+    font-size: 18px;
+    color: #666666;
+    margin: 10px;
+}
+
+/* Solution 5 Ends */
+
+/* Solution 6 Starts */
+
+.sixBtn{
+    background: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Solution 6 Ends */
+
+/* Solution 7 Starts */
+
+.sevenIp{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #cccccc;
+    padding: 0 20px;
+    background: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sevenIp::placeholder{
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: 400
+}
+/* Solution 7 Ends */
