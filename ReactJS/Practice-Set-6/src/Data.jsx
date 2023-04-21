@@ -403,3 +403,58 @@ export const fakeFetchProfileEight = (url) => {
         }, 2000);
     });
 };
+
+export const fakeFetchVideoNine = (url) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (url === "https://example.com/api/getvideo") {
+                resolve({
+                    status: 200,
+                    message: "Success",
+                    data: {
+                        videos: {
+                            title: "The Power of Habit",
+                            thumbnail: "https://picsum.photos/250/130",
+                            views: 1000000,
+                            likes: 50000,
+                        },
+                    },
+                });
+            } else {
+                reject({
+                    status: 404,
+                    message: "Video not found.",
+                });
+            }
+        }, 2000);
+    });
+};
+
+export const fakeFetchProfileTen = (url) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (url === "https://example.com/api/profile") {
+                resolve({
+                    status: 200,
+                    message: "Success",
+                    data: {
+                        profile: {
+                            name: "John",
+                            age: 30,
+                            gender: "male",
+                            email: "john@example.com",
+                            occupation: "Software Engineer",
+                            followers: 450,
+                            followedBy: 400,
+                        },
+                    },
+                });
+            } else {
+                reject({
+                    status: 404,
+                    message: "Profile not found.",
+                });
+            }
+        }, 2000);
+    });
+};

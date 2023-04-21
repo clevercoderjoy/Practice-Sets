@@ -31,12 +31,16 @@ export const SolEight = ({ fetchEight }) => {
     const setInput = (e) => {
         const newName = e.target.value;
         user.userProfile.name = newName;
-        // setUser((user) => ({ ...user, userProfile: name }));
+        setUser((user) => ({ ...user, [user.userProfile.name]: newName }));
+    };
+    const handleEnter = (e) => {
+        if (e.key === "Enter") {
+            setUser((user) => ({ ...user, showInput: false }));
+        }
     };
     useEffect(() => {
-        getUsers();
+        // getUsers();
     }, []);
-    console.log(user.userProfile);
     return (
         <React.Fragment>
             <h2>Solution 8</h2>
@@ -52,6 +56,7 @@ export const SolEight = ({ fetchEight }) => {
                     {user.userProfile.name}
                     <input
                         onChange={(e) => setInput(e)}
+                        onKeyDown={(e) => handleEnter(e)}
                         type="text"
                         style={{ display: user.showInput ? "block" : "none" }}
                     />
