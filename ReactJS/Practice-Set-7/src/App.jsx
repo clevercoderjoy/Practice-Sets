@@ -24,13 +24,13 @@ function App() {
         <React.Fragment>
             <h1>React Practice Set 7</h1>
             <hr />
-            <SolOne fetchOne={fakeFetchWeatherOne} />
+            {/* <SolOne fetchOne={fakeFetchWeatherOne} />
             <SolTwo fetchTwo={fakeFetchUserTwo} />
             <SolThree fetchThree={fakeFetchMoviesThree} />
             <SolFour fetchFour={fakeFetchUsersFour} />
             <SolFive fetchFive={fakeFetchQuoteFive} />
             <SolSix fetchSix={fakeFetchMoviesSix} />
-            <SolSeven fetchSeven={fakeFetchProductsSeven} />
+            <SolSeven fetchSeven={fakeFetchProductsSeven} /> */}
             <SolNine fetchNine={fakeFetchProductNine} />
         </React.Fragment>
     );

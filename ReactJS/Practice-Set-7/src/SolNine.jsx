@@ -46,7 +46,7 @@ export const SolNine = ({ fetchNine }) => {
         }
     };
     useEffect(() => {
-        // getProducts();
+        getProducts();
     }, []);
     return (
         <React.Fragment>
