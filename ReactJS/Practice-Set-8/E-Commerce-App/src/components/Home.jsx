@@ -14,7 +14,6 @@ function Home() {
             <StyledDiv>
                 {commerce.loading && "Loading..."}
                 {commerce.error !== "" && commerce.errorMsg}
-                <StyledH2>Total Products: {commerce.products.length}</StyledH2>
                 <StyledUl>
                     {
                         commerce.products.map((product, index) => {
@@ -62,9 +61,6 @@ function Home() {
 
 export default Home
 
-export const StyledH2 = styled.h2`
-    margin: 0 0 1rem 0;
-`;
 export const StyledDiv = styled.div`
     background: #013870;
     border-radius: 5px;
