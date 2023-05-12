@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import { DataContext } from '../contexts/DataContext';
+import { DataContext } from "../contexts/DataContext";
 import { StyledH2 } from "./Home";
 
 function Cart() {

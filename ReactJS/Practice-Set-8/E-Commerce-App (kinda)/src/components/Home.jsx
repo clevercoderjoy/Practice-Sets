@@ -12,7 +12,7 @@ function Home() {
     return (
         <>
             <StyledDiv>
-                {commerce.loading && "Loading..."}
+                {commerce.loading && "Ruko Zara... Sabar Karo..."}
                 {commerce.error !== "" && commerce.errorMsg}
                 <StyledH2>Total Products: {commerce.products.length}</StyledH2>
                 <StyledUl>
